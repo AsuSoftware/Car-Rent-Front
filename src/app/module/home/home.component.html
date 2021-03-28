@@ -1,1 +1,192 @@
-<p>home works!</p>
+<div class="container-home">
+  <section class="welcome">
+    <div class="description">
+      <h2>Welcome to My Rent</h2>
+      <p>The place where you can rent and rent vehicles of any type. Our goal is to provide high quality vehicles at the
+        best prices. Don't you believe us? Check this out for yourself</p>
+      <button>Rent</button>
+    </div>
+    <div class="image">
+      <img src="./assets/img/image-welcome.png" alt="image welcome to my rent app">
+    </div>
+  </section>
+  <section class="best-car">
+    <div class="description">
+      <h2>The best cars of the month</h2>
+      <p>According to our statistics, it turns out that these were the most voted cars and with the best prices</p>
+    </div>
+    <div class="slider">
+      <carousel [margin]="20" [autoplay]="true" [arrowsOutside]="true" [cellWidth]="250">
+        <div class="carousel-cell">
+          <img src="./assets/img/bmw_m5.png" alt="bmw m5 image">
+          <p class="title">Bmw M5</p>
+          <div class="top">
+            <div class="box-info">
+              <i class="fas fa-gas-pump"></i>
+              <p>Disel</p>
+            </div>
+            <div class="box-info">
+              <i class="fas fa-calendar-alt"></i>
+              <p>2020</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="box-info">
+              <i class="fas fa-road"></i>
+              <p>7.500km</p>
+            </div>
+            <div class="box-info">
+              <i class="fas fa-tags"></i>
+              <p>90$/Day</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+          <img src="./assets/img/mercedes-benz-amg.png" alt="mercedes image">
+          <p class="title">Mercedes-Benz AMG GT</p>
+          <div class="top">
+            <div class="box-info">
+              <i class="fas fa-gas-pump"></i>
+              <p>Disel</p>
+            </div>
+            <div class="box-info">
+              <i class="fas fa-calendar-alt"></i>
+              <p>2019</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="box-info">
+              <i class="fas fa-road"></i>
+              <p>37.247km</p>
+            </div>
+            <div class="box-info">
+              <i class="fas fa-tags"></i>
+              <p>100$/Day</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+          <img src="./assets/img/lamborghini-hurracan.png" alt="lamborghini image">
+          <p class="title">Lamborghini Hurracan</p>
+          <div class="top">
+            <div class="box-info">
+              <i class="fas fa-gas-pump"></i>
+              <p>Petrol</p>
+            </div>
+            <div class="box-info">
+              <i class="fas fa-calendar-alt"></i>
+              <p>2016</p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="box-info">
+              <i class="fas fa-road"></i>
+              <p>1.467km</p>
+            </div>
+            <div class="box-info">
+              <i class="fas fa-tags"></i>
+              <p>100$/Day</p>
+            </div>
+          </div>
+        </div>
+
+      </carousel>
+    </div>
+  </section>
+  <section class="cars">
+    <div class="top">
+      <div class="box" *ngFor="let postTop of postsTop">
+        <img src={{postTop.image}} alt="bmw m5 image">
+        <p class="title">{{postTop.title}}</p>
+        <div class="top">
+          <div class="box-info">
+            <i class="fas fa-gas-pump"></i>
+            <p>{{postTop.gas}}</p>
+          </div>
+          <div class="box-info">
+            <i class="fas fa-calendar-alt"></i>
+            <p>{{postTop.year}}</p>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="box-info">
+            <i class="fas fa-road"></i>
+            <p>{{postTop.km}}km</p>
+          </div>
+          <div class="box-info">
+            <i class="fas fa-tags"></i>
+            <p>{{postTop.price}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="box" *ngFor="let postBottom of postsBottom">
+        <img src={{postBottom.image}} alt="bmw m5 image">
+        <p class="title">{{postBottom.title}}</p>
+        <div class="top">
+          <div class="box-info">
+            <i class="fas fa-gas-pump"></i>
+            <p>{{postBottom.gas}}</p>
+          </div>
+          <div class="box-info">
+            <i class="fas fa-calendar-alt"></i>
+            <p>{{postBottom.year}}</p>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="box-info">
+            <i class="fas fa-road"></i>
+            <p>{{postBottom.km}}km</p>
+          </div>
+          <div class="box-info">
+            <i class="fas fa-tags"></i>
+            <p>{{postBottom.price}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="why-choose-us">
+    <div class="description">
+      <h2 class="title">Why choose us?</h2>
+      <p>Because we have the best cars at the best prices on the market. Our goal is to offer vehicles of any type
+        quickly
+        and economically</p>
+    </div>
+  </section>
+  <section class="opinions">
+    <h2 class="title">Here you have the opinion of the
+      people who used our application</h2>
+    <div class="container-opinions">
+      <div class="box">
+        <div class="photo">
+          <img src="./assets/img/girl1.jpg" alt="girl image opinion">
+        </div>
+        <h2 class="name">Jessica JT</h2>
+        <p class="description">I love this application, because
+          everywhere I go I quickly find
+          beautiful cars at the best prices. I
+          recommend!</p>
+      </div>
+      <div class="box">
+        <div class="photo">
+          <img src="./assets/img/girl2.jpg" alt="girl image opinion">
+        </div>
+        <h2 class="name">Lauren</h2>
+        <p class="description">With this application I can finally make money with cars that I no longer use and that
+          were in the garage for nothing. My income has increased since I chose My Rent!</p>
+      </div>
+      <div class="box">
+        <div class="photo">
+          <img src="./assets/img/men.jpg" alt="men image opinion">
+        </div>
+        <h2 class="name">Sirio KL</h2>
+        <p class="description">What a great application! Everywhere I go I stay calm because I can find vehicles at
+          affordable prices and without too much hassle</p>
+      </div>
+    </div>
+  </section>
+</div>

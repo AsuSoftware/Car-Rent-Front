@@ -87,14 +87,19 @@ $background: #2b2e4a;
 
       li {
         margin: 20px 0!important;
+        a {
+          font-size: 27px;
+        }
       }
 
       i {
+        display: block!important;
         color: $font-color;
         font-size: 25px;
         position: relative;
         bottom: 28%;
         left: 38%;
+        font-size: 45px;
       }
     }
   }
