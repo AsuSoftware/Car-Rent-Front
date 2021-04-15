@@ -12,7 +12,6 @@
 - Scss
 
 # Images
+![Screenshot](https://raw.githubusercontent.com/AsuSoftware/Car-Rent-Front/main/src/assets/Screen/Home-page.jpeg)
 
-https://raw.githubusercontent.com/AsuSoftware/Car-Rent-Front/main/src/assets/Screen/Home-page.jpeg
-
-https://raw.githubusercontent.com/AsuSoftware/Car-Rent-Front/main/src/assets/Screen/Rent-page.jpeg
+![Screenshot](https://raw.githubusercontent.com/AsuSoftware/Car-Rent-Front/main/src/assets/Screen/Rent-page.jpeg)
