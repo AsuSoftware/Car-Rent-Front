@@ -10,3 +10,9 @@
 - Typescript
 - Html5
 - Scss
+
+# Images
+
+https://raw.githubusercontent.com/AsuSoftware/Car-Rent-Front/main/src/assets/Screen/Home-page.jpeg
+
+https://raw.githubusercontent.com/AsuSoftware/Car-Rent-Front/main/src/assets/Screen/Rent-page.jpeg
